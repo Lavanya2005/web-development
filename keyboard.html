@@ -1,0 +1,41 @@
+<html>
+    <head></head>
+    <body>
+        <canvas id='can' height="450" width="450"></canvas>
+        <script>
+            var canvas=document.getElementById('can');
+            var ctx=canvas.getContext('2d');
+            ctx.fillStyle='red';
+            ctx.fillRect(10,10,110,110);
+            window.addEventListener('keydown',move,true);
+            var x=10;
+            var y=10;
+            function move(e){
+                if (e.keyCode==37 &&x>0){
+                    ctx.clearRect(0,0,canvas.width,canvas.height);
+                    x-=10;
+                    ctx.fillStyle='red';
+                    ctx.fillRect(x,y,110,110);
+                }
+                if (e.keyCode==38&&y>0){
+                    ctx.clearRect(0,0,canvas.width,canvas.height);
+                    y-=10;
+                    ctx.fillStyle='red';
+                    ctx.fillRect(x,y,110,110);
+                }
+                if (e.keyCode==39 &&x<350){
+                    ctx.clearRect(0,0,canvas.width,canvas.height);
+                    x+=10;
+                    ctx.fillStyle='red';
+                    ctx.fillRect(x,y,110,110);
+                }
+                if (e.keyCode==40&&y<350){
+                    ctx.clearRect(0,0,canvas.width,canvas.height);
+                    y+=10;
+                    ctx.fillStyle='red';
+                    ctx.fillRect(x,y,110,110);
+                }
+            }
+        </script>
+    </body>
+</html>
