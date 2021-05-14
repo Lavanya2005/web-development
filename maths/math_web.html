@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 450px)" href="md450.css">
+    <link rel="stylesheet" media="screen and (max-width: 750px)" href="md750.css">
+    <link rel="stylesheet" media="screen and (max-width: 950px)" href="md950.css">
+    <link rel="stylesheet" media="screen and (min-width: 951px)" href="min951.css">
+    <title>Math classes</title>
+</head>
+<body>
+    <header>
+        <p>Math classes</p>
+        <div class="fnav" onclick="toggle()"></div> 
+        <ul class="nav">
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#menu">PRICING</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+            <li><a href="lesson.html">LESSON ACTIVITY LOG</a></li>
+        </ul>
+    </header>   
+    <section class ="banner" id="banner">
+        <div class="quote">
+            <h2>Math may not teach us how to add love or substract hate but it gives us hope that
+                <span>EVERY PROBLEM HAS A SOLUTION</span></h2><br>
+            <!--RN THE QUOTE CAN ONLY BE SEEN IN A MINIMISED VERSION-->
+            <a href="#about" class="btn" style="border:2px solid rgb(158, 152, 152); border-radius: 40px; 
+            background-color: rgba(97, 43, 43, 0); color: rgb(146, 224, 127)">About me</a>
+        </div>
+        <div class="main"><figure>
+            <span><img src="mathimg1.jpg"></span>
+            <span><img src="mathimg2.png"></span>
+            <span><img src="mathimg3.png"></span>
+            <span><img src="mathimg5.jpg"></span>
+            <span><img src="mathimg4.jpg"></span>
+            <span><img src="mathimg6.webp"></span>
+            <span><img src="mathimg7.jpg"></span>
+            <span><img src="mathimg8.png"></span>
+        </figure>
+        </div>
+        
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2><u>About me</u></h2>
+                <p >Hello there! I am Neeru Bansal and I have been a teacher for over 15 years. <br><br>I am a charted accountant with a masters in finance.<br><br>
+                    I have been tutoring students for IGCSE, A levels and IB for almost fiver years now! There has been a huge change in their
+                    level of understanding in mere weeks. <br><br>I mainly teach mathematics however I am also well versed in physics, chemistry, biology, business and economics. <br><br>
+                    Currently, I have 7 students preparing for their math IGCSE's, 3 students preparing for their math A-levels and 2 students preparing for maths in IB.
+                    Moreover, 4 of my students are also learning the three sciences from me and 2 students are learning business and economics. 
+                    </p>
+            </div>
+            <div class="col50">
+                <div class="img"><img src="math_quote.jpg"></div>
+                <br><br>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2><u>Pricing</u></h2>
+            <h4 style="color: #D35400;font-family: 'Times New Roman', Times, serif;font-size: 20px;">Purple pricing for individual classes<br>Green pricing for group (of 2) classes</h4>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="bus.png">
+                </div>
+                <div class="text">
+                    <h3>Business and Economics</h3>
+                    <h4 style="color: #8E44AD;">2500php for 1 hour</h4>
+                    <h4 style="color:#138D75;">2000php for 1.5 hours</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="sci.jpg">
+                </div>
+                <div class="text">
+                    <h3>Sciences</h3>
+                    <h4 style="color: #8E44AD;">2500php for 1.5 hours</h4>
+                    <h4 style="color:#138D75;">2000php for 1.5 hours</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="mathematics-png.jpg">
+                </div>
+                <div class="text">
+                    <h3>Mathematics</h3>
+                    <h4 style="color: #8E44AD;">2500php for 1.5 hours</h4>
+                    <h4 style="color:#138D75;">2000php for 1.5 hours</h4>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="title">
+            <a href="#contact" class="btn">Click to contact me for more details</a>
+        </div>
+    </section>
+    <footer class="contact" id="contact" style="padding-left: 500px;">
+
+        <div class="c1">
+            <p style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Call me at +639175876321</p>
+            <i class="fa fa-phone" style="font-size:34px;color: rgb(192, 192, 235);"></i>
+            <br><br>
+            <p style="color: white;font-family: Georgia, 'Times New Roman', Times, serif;">Email me at gneha123@gmail.com</p>
+            <i class="fa fa-envelope" style="font-size:34px;color: rgb(192, 192, 235);"></i>
+        <div class="name"><p>Tutoring!</p></div>
+        <div class="copy"><i class='far fa-copyright'></i>Copyright 2020-2050. All rights reserved.</div>
+    </div>
+        
+
+    </footer>
+    <script>
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+
+        function toggle(){
+            const tog = document.getElementsByClassName("fnav")[0];
+            const menu = document.getElementsByClassName("nav")[0];
+            tog.classList.toggle("active");
+            menu.classList.toggle("active"); 
+        } 
+
+        /*the toggle function does the disappering and stuff*/
+    </script>
+</body>
+</html>
